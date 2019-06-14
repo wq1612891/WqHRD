@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WqHRD</string>
+    <string name="step">步数：</string>
+    <string name="time">时间：</string>
+</resources>

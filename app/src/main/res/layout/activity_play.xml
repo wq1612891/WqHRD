@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ConstraintLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayActivity">
+    <android.support.constraint.ConstraintLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/ConstraintLayout-inner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/ConstraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/absoluteLayout">
+
+        <TextView
+            android:id="@+id/step"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical|left"
+            android:text="@string/step"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical|left"
+            android:text="@string/time"
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+    <AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/absoluteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    <TextView
+        android:id="@+id/chess10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="卒"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorOne"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/chess9"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="卒"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorTwo"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/chess3"
+        android:layout_width="75dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:background="@color/colorThree"
+        android:text="黄忠"
+        android:gravity="center_vertical|center_horizontal"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <TextView
+        android:id="@+id/chess2"
+        android:layout_width="75dp"
+        android:layout_height="150dp"
+        android:text="赵云"
+        android:background="@color/colorFour"
+        android:textSize="36sp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.258"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/chess1"
+        android:layout_width="75dp"
+        android:layout_height="150dp"
+        android:text="张飞"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorFive"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <TextView
+        android:id="@+id/chess4"
+        android:layout_width="75dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="马超"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/colorSix"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="250dp" />
+
+    <TextView
+        android:id="@+id/chess8"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:text="卒"
+        android:background="@color/colorSeven"
+        android:textSize="36sp"
+        tools:layout_editor_absoluteX="265dp"
+        android:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/chess7"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="卒"
+        android:background="@color/colorEight"
+        android:textSize="36sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="181dp" />
+
+    <TextView
+        android:id="@+id/chess5"
+        android:layout_width="150dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="16dp"
+        android:text="关羽"
+        android:background="@color/colorNine"
+        android:textSize="36sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_vertical|center_horizontal"
+        tools:layout_editor_absoluteX="5dp" />
+
+        <TextView
+            android:id="@+id/chess6"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@color/colorTen"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="曹操"
+            android:textSize="36sp"
+            tools:layout_editor_absoluteX="95dp"
+            tools:layout_editor_absoluteY="264dp" />
+
+
+    </AbsoluteLayout>
+
+</android.support.constraint.ConstraintLayout>
